@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dp"
+            android:orientation="vertical"
+            android:layout_marginLeft="15dp" 
+            android:layout_marginRight="15dp" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Attach Photo"
+                android:textSize="30sp"
+                android:paddingLeft="5dp" />
+            
+            <ImageView
+                android:id="@+id/foodimage"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="5dp" >
+
+                <ImageView
+                    android:id="@+id/selectimage"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:src="@drawable/gallery" />
+
+                <ImageView
+                    android:id="@+id/captureimage"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:src="@drawable/camera" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Food Details"
+                android:paddingTop="10dp"
+                android:textSize="30sp"
+                android:paddingLeft="5dp" />
+
+            <EditText
+                android:id="@+id/foodname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Food Name"
+                android:ems="10" />
+
+            <AutoCompleteTextView
+                android:id="@+id/foodtype"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Food Type"
+                android:ems="10" />
+
+            <EditText
+                android:id="@+id/quantity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Quantity"
+                android:ems="10"
+                android:inputType="numberSigned" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Purchase Date"
+                android:textSize="30sp"
+                android:paddingTop="10dp"
+                android:paddingLeft="5dp" />
+
+            <DatePicker
+                android:id="@+id/purchasedate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Expiry Date"
+                android:textSize="30sp"
+                android:paddingTop="10dp"
+                android:paddingLeft="5dp" />
+
+            <DatePicker
+                android:id="@+id/expirydate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/foodsubmit"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Submit"
+                android:textSize="25sp" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
